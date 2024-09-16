@@ -57,11 +57,29 @@ Here’s a sneak peek into the code that runs behind this chatbot, leveraging La
 
 # 4. How to Set Up the Project
 ### Step 1: Clone the Repository
+```bash
 git clone https://github.com/gannemjahnavi/MultiModal_RAG_BOT.git
+```
 
 ### Step 2: Navigate to the Project Directory
 Change into the project directory:
 ```bash
-cd MultiModal_RAG_BOT
+cd MULTIMODAL_RAG_BOT
+```
+### Step 3: Install the Dependencies
+Install all required libraries and packages:
 
-
+```bash
+python -m pip install -r requirements.txt
+```
+### Step 4: Add Secrets
+Create a .streamlit folder in the project root, and inside it, create a secrets.toml file. 
+Add your MindsDB API key:
+```bash
+api_key='your-minds-api-key'
+```
+### Step 5: Start the Application
+Run the Streamlit application:
+```bash
+python -m streamlit run app.py
+```
